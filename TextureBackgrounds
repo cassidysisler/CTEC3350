@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Texture Backgrounds</title>
+        <meta name="description" content="These are my Texture Backgrounds.">
+        <style>
+            h1 {text-align: center}
+            body {margin-top: 100px; margin-right: 250px; margin-bottom: 100px; margin-left: 250px; font-family: monospace; background-image: url(red.png)}
+            .promo-container {background-color: green; 5px black solid; margin: 20px; padding: 10px 20px 10px 20px}
+            .promo-pic1 {margin-right: 65px; border: 3px black solid}
+            .promo-pic2 {margin-right: 65px; border: 3px black solid}
+            .promo-pic3 {border: 3px black solid}
+        </style>
+    </head>
+    <body>
+
+        <header><h1>Texture Backgrounds</h1></header>
+
+        <div class=promo-container><h2 class="promo-title">Promo</h2>
+
+        <img class="promo-pic1" src="peppermintmocha.jpg" alt="full view peppermint mocha" height="300" width="200">
+
+        <img class="promo-pic2" src="peppermintmocha2.jpg" alt="top view peppermint mocha" height="300" width="200">
+
+        <img class="promo-pic3" src="peppermintmocha3.jpg" alt="detail view peppermint mocha" height="300" width="200">
+
+        <p class="promo-description"><h3>
+            Guess what?<br/>
+            The Peppermint Mocha is back, with new flavors<br/>
+            to celebrate winter. This is the start of something new.
+            </h3></div>
+
+    </body>
+</html>
