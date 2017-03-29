@@ -7,11 +7,11 @@
     <body>
         <h1>Form</h1>
         <form method="post" action="registration.php" name="registration">
-            <label>Username: <input type="text" name="username" id="username" placeholder="username" max-length="30"/></label><br/>
+            <fieldset><legend>User Information</legend><label>Username: <input type="text" name="username" id="username" placeholder="username" max-length="30"/></label><br/>
             <label>Email: <input type="email" name="email" id="email" placeholder="email@email.com"/></label><br/>
             <label>Password: <input type="password" name="password" id="password" placeholder="password" max-length="30"/></label><br/>
-            <label>Confirm Password: <input type="password" name="confirmpassword" id="confirmpassword" placeholder="confirm password" max-length="30"/></label><br/>
-            <label>Favorite day of the week?<br/>
+            <label>Confirm Password: <input type="password" name="confirmpassword" id="confirmpassword" placeholder="confirm password" max-length="30"/></label><br/></fieldset><br/>
+            <fieldset><legend>Social Presence</legend><label>Favorite day of the week?<br/>
                 <input type="radio" name="day" id="day" value="Mon"/>Monday<br/>
                 <input type="radio" name="day" id="day" value="Tue"/>Tuesday<br/>
                 <input type="radio" name="day" id="day" value="Wed"/>Wednesday<br/>
@@ -26,12 +26,12 @@
                 <input type="checkbox" name="socialmedia" id="socialmedia" value="Tum"/>Tumblr<br/>
                 <input type="checkbox" name="socialmedia" id="socialmedia" value="Twit"/>Twitter<br/>
                 <input type="checkbox" name="socialmedia" id="socialmedia" value="Vi"/>Vine<br/>
-                <input type="checkbox" name="socialmedia" id="socialmedia" value="You"/>Youtube</label><br/>
-            <label>Street: <input type="text" name="street" id="street" placeholder="Street" maxlength="100"/><br/>
+                <input type="checkbox" name="socialmedia" id="socialmedia" value="You"/>Youtube</label><br/></fieldset><br/>
+            <fieldset><legend>Mailing Information</legend><label>Street: <input type="text" name="street" id="street" placeholder="Street" maxlength="100"/></label><br/>
             <label>City: <input type="text" name="city" id="city" placeholder="City" maxlength="30"/></label><br/>
             <label>State: <input type="text" name="state" id="state" placeholder="State" maxlength="30"/></label><br/>
-            <label>Zip Code: <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code" maxlength="10"/></label><br/>
-            <label>Comments: <textarea name="comments" name="comments" id="comments" placeholder="Comments" maxlength="500" rows="10" cols="50"></textarea></label></label>
+            <label>Zip Code: <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code" maxlength="10"/></label><br/></fieldset><br/>
+            <label>Comments: <textarea name="comments" id="comments" placeholder="Comments" maxlength="500" rows="10" cols="50"></textarea></label>
         </form>
     </body>
 </html>
