@@ -59,76 +59,137 @@ img.img-responsive {
 
 /* BIO COMPONENT */
 .bio {
-    margin: 0 auto;
-    max-width: 700px;
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid #333333;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
 }
 
 .bio-container {
     display: -webkit-flex;
     display: flex;
+    
     -webkit-flex-direction: row;
     flex-direction: row;
+    
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    border: 1px solid #444444;
+    
+    align-items: center;
+    align-content: flex-start;
 }
 
 .bio-title {
-    order: 1;
     flex: 1 100%;
-    flex-grow: 2;
-    padding: 0.625rem;
-    background-color: #444444;
+    box-sizing: border-box;
+    background-color: #333333;
+    padding: 0.75rem;
+}
+
+.bio-title h3 {
+    color: #ffffff;
+    line-height: 1.5em;
+    margin: 0;
 }
 
 .bio-pic {
-    order: 2;
-    flex: 1 40%;
+    flex: 1 30%;
+    box-sizing: border-box;
+}
+
+.bio-pic img {
+    max-width: 100%;
+    height: auto;
 }
 
 .bio-description {
-    order: 3;
-    flex: 1 55%;
-    padding: 2.5%;
+    flex: 1 70%;
+    box-sizing: border-box;
+    padding: 0.75rem
+}
+
+/* bio classes */
+.bio.left {
+}
+
+.bio.right .bio-container {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.bio.stacked .bio-container {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    
+    align-items: stretch;
+}
+
+.bio.stacked .bio-container .bio-title
+.bio.stacked .bio-container .bio-pic
+.bio.stacked .bio-container .bio-description {
+    flex: 1 100%;
+}
+
+.bio.stacked .bio-container .bio-pic {
+    align-self: center;
+}
+
+.bio.stacked-reversed .bio-container {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    
+    align-items: stretch;
+}
+
+.bio.stacked-reversed .bio-container .bio-title
+.bio.stacked-reversed .bio-container .bio-pic
+.bio.stacked-reversed .bio-container .bio-description {
+    flex: 1 100%;
+}
+
+.bio.stacked-reversed .bio-container .bio-title {
+    order: 1;
+}
+
+.bio.stacked-reversed .bio-container .bio-pic {
+    align-self: center;
 }
 
 @media screen and (max-width: 30em)
-{ .bio-container {
-    flex-direction: row;
-  }
-  
-  .bio-title, .bio-pic, .bio-description {
+{
+.bio .bio-container {
+-webkit-flex-direction: column !important;
+flex-direction: column !important;
+    
+align-items: stretch;
+}
+
+.bio .bio-container .bio-title,
+.bio .bio-container .bio-pic,
+.bio .bio-container .bio-description {
     flex: 1 100%;
-  }
-  
-  .bio-pic {
-    order: 3;
-  }
-  
-  .bio-description {
-    order: 2;
-  }
+}
+    
+.bio .bio-container .bio-title {
+order: 1;
+}
+    
+.bio .bio-container .bio-pic {
+order: 2;
+align-self: center;
+}
+    
+.bio .bio-container .bio-description {
+order: 3;
+}
 }
 
 @media screen and (min-width:30.01em) and (max-width: 48em)
 {
-  .bio-container {
-    flex-direction: column;
-  }
-  
-  .bio-title, .bio-pic, .bio-description {
-    flex: 1 100%;
-  }
-  
-  .bio-pic {
-    order: 3;
-  }
-  
-  .bio-description {
-    order: 2;
-  }
+
 }
 
 @media screen and (min-width:48.01em) and (max-width: 60em)
