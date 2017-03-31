@@ -3,35 +3,110 @@
     
     <head>
         <title>Create a form</title>
+        <link rel="stylesheet" href="form.css">
     </head>
     <body>
         <h1>Form</h1>
         <form method="post" action="registration.php" name="registration">
-            <fieldset><legend>User Information</legend><label>Username: <input type="text" name="username" id="username" placeholder="username" max-length="30"/></label><br/>
-            <label>Email: <input type="email" name="email" id="email" placeholder="email@email.com"/></label><br/>
-            <label>Password: <input type="password" name="password" id="password" placeholder="password" max-length="30"/></label><br/>
-            <label>Confirm Password: <input type="password" name="confirmpassword" id="confirmpassword" placeholder="confirm password" max-length="30"/></label><br/></fieldset><br/>
-            <fieldset><legend>Social Presence</legend><label>Favorite day of the week?<br/>
-                <input type="radio" name="day" id="day" value="Mon"/>Monday<br/>
-                <input type="radio" name="day" id="day" value="Tue"/>Tuesday<br/>
-                <input type="radio" name="day" id="day" value="Wed"/>Wednesday<br/>
-                <input type="radio" name="day" id="day" value="Thu"/>Thursday<br/>
-                <input type="radio" name="day" id="day" value="Fri"/>Friday<br/>
-                <input type="radio" name="day" id="day" value="Sat"/>Saturday<br/>
-                <input type="radio" name="day" id="day" value="Su"/>Sunday</label><br/>
-            <label>Favorite social media venues?<br/>
-                <input type="checkbox" name="socialmedia" id="socialmedia" value="Face"/>Facebook<br/>
-                <input type="checkbox" name="socialmedia" id="socialmedia" value="Insta"/>Instagram<br/>
-                <input type="checkbox" name="socialmedia" id="socialmedia" value="Snap"/>Snapchat<br/>
-                <input type="checkbox" name="socialmedia" id="socialmedia" value="Tum"/>Tumblr<br/>
-                <input type="checkbox" name="socialmedia" id="socialmedia" value="Twit"/>Twitter<br/>
-                <input type="checkbox" name="socialmedia" id="socialmedia" value="Vi"/>Vine<br/>
-                <input type="checkbox" name="socialmedia" id="socialmedia" value="You"/>Youtube</label><br/></fieldset><br/>
-            <fieldset><legend>Mailing Information</legend><label>Street: <input type="text" name="street" id="street" placeholder="Street" maxlength="100"/></label><br/>
-            <label>City: <input type="text" name="city" id="city" placeholder="City" maxlength="30"/></label><br/>
-            <label>State: <input type="text" name="state" id="state" placeholder="State" maxlength="30"/></label><br/>
-            <label>Zip Code: <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code" maxlength="10"/></label><br/></fieldset><br/>
-            <label>Comments: <textarea name="comments" id="comments" placeholder="Comments" maxlength="500" rows="10" cols="50"></textarea></label>
+            <fieldset><legend>User Information</legend>
+                <div class="form-group">
+                    <label>Username: </label>
+                        <div class="form-control">
+                            <input type="text" name="username" id="username" placeholder="username" max-length="30"/>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>Email: </label>
+                        <div class="form-control">
+                            <input type="email" name="email" id="email" placeholder="email@email.com"/>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>Password: </label>
+                        <div class="form-control">
+                            <input type="password" name="password" id="password" placeholder="password" max-length="30"/>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password: </label>
+                        <div class="form-control">
+                            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="confirm password" max-length="30"/>
+                        </div>
+                </div></fieldset><br/>
+            <fieldset><legend>Social Presence</legend>
+                <div class="form-group">
+                    <label>Favorite day of the week?</label>
+                        <div class="form-control">
+                            <label><input type="radio" name="day" id="favoriteday" value="Mon"/>Monday</label><br/>
+                            <label><input type="radio" name="day" value="Tue"/>Tuesday</label><br/>
+                            <label><input type="radio" name="day" value="Wed"/>Wednesday</label><br/>
+                            <label><input type="radio" name="day" value="Thu"/>Thursday</label><br/>
+                            <label><input type="radio" name="day" value="Fri"/>Friday</label><br/>
+                            <label><input type="radio" name="day" value="Sat"/>Saturday</label><br/>
+                            <label><input type="radio" name="day" value="Su"/>Sunday</label><br/>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>Favorite social media venues?</label>
+                        <div class="form-control">
+                            <label><input type="checkbox" name="socialmedia" id="socialmedia" value="Face"/>Facebook</label><br/>
+                            <label><input type="checkbox" name="socialmedia" value="Insta"/>Instagram</label><br/>
+                            <label><input type="checkbox" name="socialmedia" value="Snap"/>Snapchat</label><br/>
+                            <label><input type="checkbox" name="socialmedia" value="Tum"/>Tumblr</label><br/>
+                            <label><input type="checkbox" name="socialmedia" value="Twit"/>Twitter</label><br/>
+                            <label><input type="checkbox" name="socialmedia" value="Vi"/>Vine</label><br/>
+                            <label><input type="checkbox" name="socialmedia" value="You"/>Youtube</label><br/>
+                        </div>
+                </div></fieldset><br/>
+            <fieldset><legend>Mailing Information</legend>
+                <div class="form-group">
+                    <label>First Name: </label>
+                        <div class="form-control">
+                            <input type="text" name="firstname" id="firstname" placeholder="First Name" maxlength="30"/>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>Last Name: </label>
+                        <div class="form-control">
+                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" maxlength="30"/>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>Address 1: </label>
+                        <div class="form-control">
+                            <input type="text" name="address1" id="address1" placeholder="Address 1" maxlength="100"/>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>Address 2: </label>
+                        <div class="form-control">
+                            <input type="text" name="address2" id="address2" placeholder="Address 2" maxlength="100"/>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>City: </label>
+                        <div class="form-control">
+                            <input type="text" name="city" id="city" placeholder="City" maxlength="30"/>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>State: </label>
+                        <div class="form-control">
+                            <input type="text" name="state" id="state" placeholder="State" maxlength="30"/>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>Zip Code: </label>
+                        <div class="form-control">
+                            <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code" maxlength="10"/>
+                        </div>
+                </div></fieldset><br/>
+                <div class="form-group">
+                    <label>Comments: </label>
+                        <div class="form-control">
+                            <textarea name="comments" id="comments" placeholder="Comments" maxlength="500" rows="10" cols="50"></textarea>
+                        </div>
+                </div>
         </form>
     </body>
 </html>
