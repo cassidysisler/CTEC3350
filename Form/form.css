@@ -61,3 +61,10 @@ form fieldset {
   padding: 0.24rem;
   font-size: 1em;
 }
+
+button {
+  font-size: 18px;
+  color: blue;
+  height: 50px;
+  width: 70px;
+}
