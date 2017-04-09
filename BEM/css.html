@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="typography.css">
+        <link rel="stylesheet" href="components.css">
+        
+        <style>
+            body {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header><h1>CSS</h1></header>
+            <h2>index.css</h2>
+            <pre>
+                <code>
+header {
+    color: deepskyblue;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.html {
+    width: 70%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.html-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.html-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.html-description {
+    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+.typography {
+    width: 70%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.typography-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.typography-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.typography-description {
+    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+.body {
+    width: 70%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.body-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.body-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.body-description {
+    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 30em)
+{
+.html, .body {
+    overflow: scroll;
+}
+}
+
+@media screen and (min-width:30.01em) and (max-width: 48em)
+{
+.html, .body {
+    overflow: scroll;
+}
+}
+
+@media screen and (min-width:48.01em) and (max-width: 60em)
+{
+.html, .body {
+    overflow: scroll;
+}
+}
+
+@media screen and (min-width:60.01em) and (max-width: 80em)
+{
+.html, .body {
+    overflow: scroll;
+}
+}
+
+@media screen and (min-width:80.01em) 
+{
+
+}
+                </code>
+            </pre>
+            
+            <h2>typography.css</h2>
+            <pre>
+                <code>
+body, html {
+    font-family: 'Arial', 'Verdana', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 4rem; 
+    margin: 1rem auto 1.5rem auto;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 3rem;
+    margin: 1rem auto 1.25rem auto;
+}
+
+h3 {
+    font-size: 1.17em;
+    line-height: 2rem;
+    margin: 1rem auto 1rem auto;
+}
+
+h4 {
+    font-size: 1em;
+    line-height: 1rem;
+    margin: 1rem auto 1rem auto;
+}
+
+h5 {
+    font-size: .83em;
+    line-height: 1rem;
+    margin: 1rem auto 1rem auto;
+}
+
+h6 {
+    font-size: .67em;
+    line-height: 1rem;
+    margin: 1rem auto 1rem auto;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1rem; 
+}
+                </code>
+            </pre>
+            
+            <h2>components.css</h2>
+            <pre>
+                <code>
+/* components.css */
+header {
+    color: deepskyblue;
+    text-align: center;
+}
+
+.bio {
+    width: 60%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.bio-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.bio-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.bio-pic {
+    flex: 1 40%;
+    box-sizing: border-box;
+    padding: 0.5rem 0rem;
+}
+
+.bio-pic img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bio-description {
+    flex: 1 60%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+.faq {
+    width: 60%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.faq-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.faq-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.faq-pic {
+    flex: 1 40%;
+    box-sizing: border-box;
+    padding: 0.5rem 0rem;
+}
+
+.faq-pic img {
+    max-width: 100%;
+    height: auto;
+}
+
+.faq-description {
+    flex: 1 60%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+.image {
+    width: 70%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.image-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.image-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.image-pic {
+    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 0rem;
+}
+
+.image-pic img {
+    max-width: 100%;
+    height: auto;
+}
+
+.drinks {
+    width: 60%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.drinks-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.drinks-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.drinks-description {
+    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+.activities {
+    width: 50%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.activities-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.activities-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.activities-description {
+    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 30em)
+{
+.bio .bio-container {
+    -webkit-flex-direction: column !important;
+    flex-direction: column !important;
+
+    align-items: stretch;
+}
+
+.bio .bio-container .bio-title,
+.bio .bio-container .bio-pic,
+.bio .bio-container .bio-description {
+    flex: 1 100%;
+}
+
+.bio .bio-container .bio-title {
+    order: 1;
+}
+
+.bio .bio-container .bio-pic {
+    order: 2;
+    align-self: center;
+}
+
+.bio .bio-container .bio-description {
+    order: 3;
+}
+
+.faq .faq-container {
+    -webkit-flex-direction: column !important;
+    flex-direction: column !important;
+
+    align-items: stretch;
+}
+
+.faq .faq-container .faq-title,
+.faq .faq-container .faq-pic,
+.faq .faq-container .faq-description {
+    flex: 1 100%;
+}
+
+.faq .faq-container .faq-title {
+    order: 1;
+}
+
+.faq .faq-container .faq-pic {
+    order: 2;
+    align-self: center;
+}
+
+.faq .faq-container .faq-description {
+    order: 3;
+}
+
+.image .image-container {
+    -webkit-flex-direction: column !important;
+    flex-direction: column !important;
+
+    align-items: stretch;
+}
+
+.image .image-container .image-title,
+.image .image-container .image-pic {
+    flex: 1 100%;
+}
+
+.image .image-container .image-title {
+    order: 1;
+}
+
+.image .image-container .image-pic {
+    order: 2;
+    align-self: center;
+}
+}
+
+@media screen and (min-width:30.01em) and (max-width: 48em)
+{
+
+}
+
+@media screen and (min-width:48.01em) and (max-width: 60em)
+{
+
+}
+
+@media screen and (min-width:60.01em) and (max-width: 80em)
+{
+
+}
+
+@media screen and (min-width:80.01em) 
+{
+
+}
+                </code>
+            </pre>
+    </body>
+</html>

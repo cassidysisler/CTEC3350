@@ -1,0 +1,163 @@
+header {
+    color: deepskyblue;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.html {
+    width: 70%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.html-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.html-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.html-description {
+    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+.typography {
+    width: 70%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.typography-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.typography-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.typography-description {
+    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+.body {
+    width: 70%;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.body-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.body-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.body-description {
+    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 30em)
+{
+.html, .body {
+    overflow: scroll;
+}
+}
+
+@media screen and (min-width:30.01em) and (max-width: 48em)
+{
+.html, .body {
+    overflow: scroll;
+}
+}
+
+@media screen and (min-width:48.01em) and (max-width: 60em)
+{
+.html, .body {
+    overflow: scroll;
+}
+}
+
+@media screen and (min-width:60.01em) and (max-width: 80em)
+{
+.html, .body {
+    overflow: scroll;
+}
+}
+
+@media screen and (min-width:80.01em) 
+{
+
+}
