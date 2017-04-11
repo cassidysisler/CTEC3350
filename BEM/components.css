@@ -45,6 +45,7 @@ header {
 .bio-pic img {
     max-width: 100%;
     height: auto;
+    align-self: center;
 }
 
 .bio-description {
@@ -54,7 +55,7 @@ header {
 }
 
 .faq {
-    width: 60%;
+    width: 50%;
     margin: 20px auto;
     border: 3px solid black;
     box-sizing: border-box;
@@ -87,7 +88,7 @@ header {
 }
 
 .faq-pic {
-    flex: 1 40%;
+    flex: 1 50%;
     box-sizing: border-box;
     padding: 0.5rem 0rem;
 }
@@ -98,7 +99,7 @@ header {
 }
 
 .faq-description {
-    flex: 1 60%;
+    flex: 1 50%;
     box-sizing: border-box;
     padding: 0.5rem;
 }
@@ -227,6 +228,10 @@ header {
 
 @media screen and (max-width: 30em)
 {
+.bio {
+    width: 90%; 
+}
+
 .bio .bio-container {
     -webkit-flex-direction: column !important;
     flex-direction: column !important;
@@ -253,6 +258,10 @@ header {
     order: 3;
 }
 
+.faq {
+    width: 90%; 
+}
+    
 .faq .faq-container {
     -webkit-flex-direction: column !important;
     flex-direction: column !important;
@@ -270,13 +279,17 @@ header {
     order: 1;
 }
 
-.faq .faq-container .faq-pic {
+.faq .faq-container .faq-description {
     order: 2;
-    align-self: center;
 }
 
-.faq .faq-container .faq-description {
+.faq .faq-container .faq-pic {
     order: 3;
+    align-self: center;
+}
+    
+.image {
+    width: 90%; 
 }
 
 .image .image-container {
@@ -298,6 +311,10 @@ header {
 .image .image-container .image-pic {
     order: 2;
     align-self: center;
+}
+
+.drinks, .activities {
+    width: 90%; 
 }
 }
 

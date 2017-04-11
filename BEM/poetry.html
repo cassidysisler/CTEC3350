@@ -5,7 +5,7 @@
         <title>Java Jam Poetry</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="bem.css">
         <link rel="stylesheet" href="typography.css">
         <link rel="stylesheet" href="components.css">
         
@@ -15,12 +15,12 @@
                 text-align: center;
             }
             
-            .nav {
+            .nav2 {
                 background-color: deepskyblue;
                 overflow: hidden;
             }
             
-            .nav a {
+            .nav2 a {
                 float: left;
                 display: block;
                 color: white;
@@ -30,18 +30,18 @@
                 font-size: 18px;
             }
             
-            .nav a:hover {
+            .nav2 a:hover {
                 background-color: yellow;
                 color: black;
             }
             
-            .nav a:visited {
+            .nav2 a:visited {
                 color: purple;
             }
             
             @media screen and (max-width: 30em)
             {
-            .nav a {
+            .nav2 a {
                 float: none;
                 display: block;
                 color: white;
@@ -76,7 +76,16 @@
     <body>
         <header><h1>Poetry</h1></header>
         
-        <div class="nav" id="nav-container">
+        <div class="nav1">
+        <ul>
+            <li><a href="bem.html">BEM</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+        </ul>
+        </div>
+        
+        <div class="nav2" id="nav-container">
             <a href="home.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="music.html">Music</a>

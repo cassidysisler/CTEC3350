@@ -1,3 +1,7 @@
+body {
+    background-color: lavender;
+}
+
 header {
     color: deepskyblue;
     text-align: center;
@@ -131,6 +135,10 @@ table td {
 
 @media screen and (max-width: 30em)
 {
+.html, .typography, .body {
+    width: 90%;  
+}
+
 .html, .body {
     overflow: scroll;
 }

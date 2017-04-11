@@ -5,21 +5,30 @@
         <title>CSS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="bem.css">
         <link rel="stylesheet" href="typography.css">
         <link rel="stylesheet" href="components.css">
         
-        <style>
-            body {
-                padding: 20px;
-            }
-        </style>
     </head>
     <body>
-        <header><h1>CSS</h1></header>
-            <h2>index.css</h2>
-            <pre>
-                <code>
+    <header><h1>CSS</h1></header>
+        
+    <div class="nav1">
+        <ul>
+            <li><a href="bem.html">BEM</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+        </ul>
+    </div>
+
+    <h2>bem.css</h2>
+    <pre>
+        <code>
+body {
+    background-color: lavender;
+}
+
 header {
     color: deepskyblue;
     text-align: center;
@@ -153,6 +162,10 @@ table td {
 
 @media screen and (max-width: 30em)
 {
+.html, .typography, .body {
+    width: 90%;  
+}
+
 .html, .body {
     overflow: scroll;
 }
@@ -183,12 +196,12 @@ table td {
 {
 
 }
-                </code>
-            </pre>
-            
-            <h2>typography.css</h2>
-            <pre>
-                <code>
+        </code>
+    </pre>
+
+    <h2>typography.css</h2>
+    <pre>
+        <code>
 body, html {
     font-family: 'Arial', 'Verdana', sans-serif;
     font-style: normal;
@@ -243,13 +256,12 @@ p {
     font-size: 1em;
     line-height: 1rem; 
 }
-                </code>
-            </pre>
-            
-            <h2>components.css</h2>
-            <pre>
-                <code>
-/* components.css */
+        </code>
+    </pre>
+
+    <h2>components.css</h2>
+    <pre>
+        <code>
 header {
     color: deepskyblue;
     text-align: center;
@@ -297,6 +309,7 @@ header {
 .bio-pic img {
     max-width: 100%;
     height: auto;
+    align-self: center;
 }
 
 .bio-description {
@@ -306,7 +319,7 @@ header {
 }
 
 .faq {
-    width: 60%;
+    width: 50%;
     margin: 20px auto;
     border: 3px solid black;
     box-sizing: border-box;
@@ -339,7 +352,7 @@ header {
 }
 
 .faq-pic {
-    flex: 1 40%;
+    flex: 1 50%;
     box-sizing: border-box;
     padding: 0.5rem 0rem;
 }
@@ -350,7 +363,7 @@ header {
 }
 
 .faq-description {
-    flex: 1 60%;
+    flex: 1 50%;
     box-sizing: border-box;
     padding: 0.5rem;
 }
@@ -479,6 +492,10 @@ header {
 
 @media screen and (max-width: 30em)
 {
+.bio {
+    width: 90%; 
+}
+
 .bio .bio-container {
     -webkit-flex-direction: column !important;
     flex-direction: column !important;
@@ -505,6 +522,10 @@ header {
     order: 3;
 }
 
+.faq {
+    width: 90%; 
+}
+    
 .faq .faq-container {
     -webkit-flex-direction: column !important;
     flex-direction: column !important;
@@ -522,13 +543,17 @@ header {
     order: 1;
 }
 
-.faq .faq-container .faq-pic {
+.faq .faq-container .faq-description {
     order: 2;
-    align-self: center;
 }
 
-.faq .faq-container .faq-description {
+.faq .faq-container .faq-pic {
     order: 3;
+    align-self: center;
+}
+    
+.image {
+    width: 90%; 
 }
 
 .image .image-container {
@@ -551,6 +576,10 @@ header {
     order: 2;
     align-self: center;
 }
+
+.drinks, .activities {
+    width: 90%; 
+}
 }
 
 @media screen and (min-width:30.01em) and (max-width: 48em)
@@ -572,7 +601,7 @@ header {
 {
 
 }
-                </code>
-            </pre>
+        </code>
+    </pre>
     </body>
 </html>
