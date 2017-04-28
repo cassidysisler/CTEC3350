@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaJam Coffee House | Jobs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <link rel="stylesheet" href="Assets/CSS/jobs.css">
+    </head>
+    <body>
+        <header><h1>JavaJam Coffee House Jobs</h1></header>
+        
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="music.html">Music</a>
+            <a href="poetry.html">Poetry</a>
+            <a href="jobs.html">Jobs</a>
+        </nav>
+        
+        <div class="jobs">
+            <div class="jobs-container">
+            <div class="jobs-title"><h2>Opportunities</h2></div>
+            <div class="jobs-description">
+                <ul>
+                    <li class="job-opportunities"><h3>Positions</h3></li>
+                    <li>Manager</li>
+                    <li>Barista</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        
+        <div class="form">
+            <div class="form-container">
+            <div class="form-title"><h2>Apply for a Job</h2></div>
+            <div class="form-description">            
+                <form method="post" action="registration.php" name="registration" id="form">
+                <fieldset><legend><h3>Personal Information</h3></legend>
+                    <div class="form-group">
+                        <label for="firstname">First Name:</label>
+                            <div class="form-control">
+                                <input type="text" name="firstname" id="firstname" placeholder="Julio" maxlength="100"/>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name:</label>
+                            <div class="form-control">
+                                <input type="text" name="lastname" id="lastname" placeholder="Perez" maxlength="100"/>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                            <div class="form-control">
+                                <input type="email" name="email" id="email" placeholder="julioperez@gmail.com" maxlength="100"/>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile Number:</label>
+                            <div class="form-control">
+                                <input type="text" name="mobilenumber" id="mobilenumber" placeholder="+1 (817) 596-7619" maxlength="100"/>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address1">Address 1:</label>
+                            <div class="form-control">
+                                <input type="text" name="address1" id="address1" placeholder="4301 Collins St" maxlength="100"/>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address2">Address 2:</label>
+                            <div class="form-control">
+                                <input type="text" name="address2" id="address2" placeholder="Suite #300" maxlength="100"/>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                            <div class="form-control">
+                                <input type="text" name="city" id="city" placeholder="Arlington" maxlength="100"/>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State:</label>
+                            <div class="form-control">
+                                <input type="text" name="state" id="state" placeholder="TX" maxlength="100"/>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipcode">Zip Code:</label>
+                            <div class="form-control">
+                                <input type="text" name="zipcode" id="zipcode" placeholder="76019" maxlength="100"/>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                            <div class="form-control">
+                                <input type="text" name="country" id="country" placeholder="United States" maxlength="100"/>
+                            </div>
+                    </div></fieldset>
+                    <div class="form-group">
+                        <label for="comments">Comments:</label>
+                            <div class="form-control">
+                                <textarea name="comments" id="comments" placeholder="Comments" maxlength="500" rows="10" cols="50"></textarea>
+                            </div>
+                    </div>
+                </form>
+                    <button type="submit" form="form" value="Submit">Submit</button>
+            </div>
+            </div>
+        </div>
+        <footer>JavaJam Coffee House | +1 (817) 596-7619 |‬ 4301 Collins St, Arlington, TX 76019, United States | <a href="sources.html">Sources</a></footer>
+    </body>
+</html>

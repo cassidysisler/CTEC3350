@@ -1,0 +1,148 @@
+body {
+    margin: 0 auto;
+    background-color: lavenderblush;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header {
+    color: deepskyblue;
+    text-align: center;
+}
+
+nav {
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+nav a:visited {
+    color: purple;
+}
+
+.sources {
+    width: 45%;
+    margin: 20px auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+
+.sources-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: flex-start;
+
+    padding: 0.5rem;
+}
+
+.sources-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: deepskyblue;
+    padding: 0.5rem;
+}
+
+.sources-description {
+    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+p {
+    padding-left: 50px;
+    text-indent: -50px;
+}
+
+footer {
+    flex: 1 100%;
+    background-color: deepskyblue;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 30em)
+{
+nav a {
+    float: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+    
+.sources {
+    width: 90%; 
+}
+
+footer {
+    flex: 1 100%;
+    color: white;
+    background-color: deepskyblue;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+}
+
+@media screen and (min-width:30.01em) and (max-width: 48em)
+{
+nav a {
+    float: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sources {
+    width: 90%; 
+}
+}
+
+@media screen and (min-width:48.01em) and (max-width: 60em)
+{
+.sources {
+    width: 90%; 
+}
+}
+
+@media screen and (min-width:60.01em) and (max-width: 80em)
+{
+
+}
+
+@media screen and (min-width:80.01em) 
+{
+
+}
